@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/stylepage.css">
+    <style>
+        form{
+            width: 50%;
+            height: auto;
+            padding: 30px;
+            background-color: pink;
+            color: palevioletred;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+        label {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        label, input {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input[type=text], input[type=password], input[type=number] {
+            width: 100%;
+            background-color: beige;
+            color: palevioletred;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        input[ type=submit] {
+            width: 30%;
+            padding: 10px;
+            background-color: lavenderblush;
+            font-weight: bolder;
+            border: none;
+            border-radius: 10px;
+            margin: 15px auto;
+            color: palevioletred;
+        }
+        input[type=text]:focus, input[type=password]:focus, input[type=number] {
+            background-color: blanchedalmond;
+            border: 3px solid purple;
+        }
+        input[type=radio] {
+            vertical-align: middle;
+        }
+        select {
+            width: 100%;
+            margin-left: 10px;
+            background-color: bisque;
+            color: rgb(233, 79, 176);
+            font-weight: bolder;
+            padding: 10px;
+        }
+    </style>
+</head>
+<header>
+    <h1>Formularios</h1>
+</header>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/html/index.html">Inicio</a></li>
+            <li><a href="/html/listas.html">Listas</a></li>
+            <li><a href="/html/tablas.html">Tablas</a></li>
+            <li><a href="/html/enlaces.html">Enlaces</a></li>
+            <li><a href="/html/imagenes.html">Imagenes</a></li>
+            <li><a href="/html/audios.html">Audio</a></li>
+            <li><a href="/html/video.html">Video</a></li>
+            <li><a href="/html/forms.html">Formularios</a></li>
+        </ul>
+    </nav>
+    <main>
+          <section>
+            <h2>Opiniones del Blog</h2>
+            <p>Hola y bienvenid@ a mi blog. Tu opinión es muy importante para mí, y me encantaría saber qué piensas sobre los temas que comparto.
+
+                Te invito a dejar tus comentarios y sugerencias a través del formulario en la web. Ya sea que te haya gustado un artículo, tengas alguna pregunta o quieras proponer nuevos temas, ¡estaré encantado de leerte!</p>
+            <form id="form1" name="form1" method="post">
+                <label for="textfield">Nombre</label>
+                <input type="text" name="nombre" id="textfield">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="number" min="18" max="90">
+                <label for="estado">Selecciona tu estado:</label>
+                <select name="select" id="select">
+                    <option value="">Aguascalientes</option>
+                    <option value="">Puebla</option>
+                    <option value="">Monterrey</option>
+                    <option value="">CDMX</option>
+                    <option value="">Oaxaca</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+          </section>
+          <section>
+            <h2>Cuéntame Sobre Ti</h2>
+            <p>¡Me encantaría conocerte mejor! Comparte un poco sobre ti y lo que piensas. Para hacerlo más fácil, he preparado dos formularios:</p>
+            <form id="form1" name="form1" method="post">
+                <label for="textfield">Nombre</label>
+                <input type="text" name="nombre" id="textfield">
+                <label for="">Genero</label>
+                <p>
+            <form action="">
+                <label for="Femenino">
+                    <input type="radio" id="Femenino"name=Genero value="Femenino">
+                    Femenino
+                </label><br>
+                <label for="Masculino">
+                    <input type="radio" id="Masculino"name=Genero value="Masculino">
+                    Masculino
+                </label><br>
+                <label for="Otro">
+                    <input type="radio" id="Otro"name=Genero value="Otro">
+                    Otro
+                </label><br>
+                 </p>
+            <label for="musica">¿Cual es tu genero musical favorito?</label>
+                <p>
+                <label for="Clasica">
+                    <input type="checkbox" id="Clasica" name="generom" value="Clasica">
+                    Clasica
+                </label><br>
+                <label for="Pop">
+                    <input type="checkbox" id="Pop" name="generom" value="Pop">
+                    Pop
+                </label><br>
+                <label for="Rock">
+                    <input type="checkbox" id="Rock" name="generom" value="Rock">
+                    Rock
+                </label><br>
+                <label for="Tropical">
+                    <input type="checkbox" id="Tropical" name="generom" value="Tropical">
+                    Tropical
+                </label><br>
+                <label for="Jazz">
+                    <input type="checkbox" id="Jazz" name="generom" value="Jazz">
+                    Jazz
+                </label><br>
+                <input type="submit" value="Enviar">
+            </p>
+            </form>
+            </p>
+          </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
