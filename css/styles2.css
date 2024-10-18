@@ -1,0 +1,168 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header, nav,main,footer{
+    /* width: 960px; */
+    color: azure;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica, sans-serif;
+}
+header{
+    /* width:1280px; */
+    height:80px;
+    background-color: #04647C;
+    color:azure;
+    font-size: 30px;
+}
+nav{
+    background-color: #F2C1B0;
+}
+main{
+    background-color: #F7A68B;
+}
+footer{
+    background-color: #04647C;
+    color: #fcd5c9;
+}
+section{
+    width: 650px;
+    background-color: #fcd5c9;
+    color: #003D4C;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+section a{
+    color: #1D8CA0;
+    font-weight: bold;
+    text-decoration: none;
+}
+section a:visited{
+    color:#f3906f;
+}
+section a:hover{
+    color: #003D4C;
+}
+nav ul li a:hover{
+    color: #fcd5c9;
+    width: 100px;
+}
+
+nav ul li a:hover{
+    background-color: #003D4C;
+    font-weight: bold;
+}
+p{
+    margin-bottom: 20px;
+}
+h2,h3,p{
+    margin-bottom: 15px;
+    
+    
+}
+h1,h5{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li{
+    width: 80px;
+    background-color: #1D8CA0;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    border-width: 3px;
+    border-color: #04647C;
+    border-style: solid;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+main nav{
+    background-color: transparent;
+}
+#lista-creativa {
+    text-align: center;
+    padding: 40px ;
+    background-color: #FFDBD7;
+}
+
+.lista-tarjetas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.lista-tarjetas li {
+    flex: 1 1 200px; 
+    max-width: 250px;
+}
+
+.tarjeta {
+    background-color: #F7F1E1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.tarjeta img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 15px; 
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    color: #CE7095;
+    margin-bottom: 10px; 
+}
+
+.tarjeta p {
+    color: #855E6E;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+}
+#lista-sencilla {
+    text-align: center;
+    padding: 40px;
+    background-color: #FFDBD7;
+}
+
+.lista-sencilla {
+    list-style: none; /* Quitar viñetas */
+    padding: 0;
+}
+
+.lista-sencilla li {
+    background-color: #CE7095;
+    color: #F7F1E1;
+    padding: 15px 20px; /* Espacio interno */
+    margin: 10px 0; /* Espacio entre elementos */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    font-size: 1.2rem; /* Tamaño del texto */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.lista-sencilla li:hover {
+    background-color: #F7F1E1; /* Cambia el color de fondo al pasar el mouse */
+    color: #CE7095; /* Cambia el color del texto */
+}

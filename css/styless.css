@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header, nav,main,footer{
+    /* width: 960px; */
+    color: white;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica, sans-serif;
+}
+header{
+    /* width:960px; */
+    height:20px;
+    background-color: #FF84AB;
+    color:azure;
+    font-size: 30px;
+    text-align: center;
+}
+nav{
+    background-color: #FEFEC5;
+    text-decoration: none;
+}
+main{
+    background-color: #CBB4FF;
+}
+footer{
+    background-color: #D6FEF6;
+    color: #9755D9;
+}
+section{
+    
+    /*width: 650px;*/
+    background-color: beige;
+    color: #9755D9;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    position: relative;
+    font-size: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+nav ul li a:hover{
+    color: #FEFEC5;
+    width: 100px;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #FF84AB;
+    font-weight: bold;
+}
+h2,h3,p{
+    margin-bottom: 15px;
+}
+h1,h5{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+li{
+    width: 80px;
+    background-color: white;
+    color: #9755D9;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    border-width: 3px;
+    border-color: #FF84AB;
+    border-style: solid;
+    display: inline-block;
+}
+.polaroid {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    float: left;
+    font-family: 'Arial', sans-serif;
+}
+.polaroid img {
+    width: 100%;
+    height: auto;
+}
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.estrellita{
+    position: absolute;
+}
+
+.estrellita.uno{
+    top: -20px;
+    left: 680px;
+    width: 50px;
+    height: 50px;
+}
+
+.estrellita.dos{
+    top: 300px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.estrellita {
+    animation: blink 1s infinite;
+}
+
+
